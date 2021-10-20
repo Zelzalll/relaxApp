@@ -10,3 +10,5 @@ def test(request):
         }
     return render(request, "relax/test.html", context)
 
+def home(request):
+    return render(request, "relax/home.html")
