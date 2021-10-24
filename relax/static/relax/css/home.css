@@ -1,0 +1,48 @@
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #211513;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+.content h2{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 30px 30%;
+}
+.btn-home{
+    font-size: 50px;
+    background-color: transparent;
+    border: 1px solid #211513;
+    cursor: pointer;
+    border-radius: 85px;
+    color: #211513;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 0;
+    margin: 20px 10px;
+    width: 300px;
+}
+.btn-home span{
+    background: brown;
+    height: 100%;
+    width: 0;
+    border-radius: 85px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn-home:hover span{
+    width: 100%;
+}
+.btn-home:hover{
+    border: none;
+}

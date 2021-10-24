@@ -12,3 +12,6 @@ def test(request):
 
 def home(request):
     return render(request, "relax/home.html")
+
+def menu(request):
+    return render(request, "relax/menu.html")
