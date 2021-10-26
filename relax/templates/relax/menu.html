@@ -2,18 +2,85 @@
 
 {% block title %}Menu{% endblock %}
 
-<style>
-    .menu-container{
-        font-display: grid;
-        grid-template-columns: 1fr 3fr;
-        color: cyan;
-    }
-</style>
-
 {% block content %}
 <div class="menu-container">
-    <div>
-        <h2>Logo</h2>
+    <div class='left-bar'>
+        <div class='img-bar'>
+            {% load static %}
+            <img src="{% static 'relax/image/logo.png' %}" alt="Logo">
+        </div>
+        <div class='navigation'>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class='menu-bar'>
+        <div class='bookmarks'>
+            <p>01</p>
+        </div>
+        <div class='item-container'>
+            <div class='item-icon'>
+                <div class='icon'>
+                    <i class="fas fa-toolbox"></i>
+                </div>
+                <h2>Music</h2>
+                <p>Soft Music</p>
+                <div class="btn-menu">
+                    <button type="button"><span></span>Join Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='menu-bar'>
+        <div class='bookmarks'>
+            <p>02</p>
+        </div>
+        <div class='item-container'>
+            <div class='item-icon'>
+                <div class='icon'>
+                    <i class="fas fa-music"></i>
+                </div>
+                <h2>Chat</h2>
+                <p>Anonymous Letter</p>
+                <div class="btn-menu">
+                    <button type="button"><span></span>Join Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='menu-bar'>
+        <div class='bookmarks'>
+            <p>03</p>
+        </div>
+        <div class='item-container'>
+            <div class='item-icon'>
+                <div class='icon'>
+                    <i class="far fa-comment"></i>
+                </div>
+                <h2>Haivl</h2>
+                <p>Jokes compilation</p>
+                <div class="btn-menu">
+                    <button type="button"><span></span>Join Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='menu-bar'>
+        <div class='bookmarks'>
+            <p>04</p>
+        </div>
+        <div class='item-container'>
+            <div class='item-icon'>
+                <div class='icon'>
+                    <i class="far fa-smile"></i>
+                </div>
+                <h2>Tools</h2>
+                <p>Play To Relax</p>
+                <div class="btn-menu">
+                    <button type="button"><span></span>Join Us</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
